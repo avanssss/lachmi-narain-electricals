@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Warehouse &amp; Facility - Lachmi Narain Electricals | Cable Distributor Coimbatore</title>
-  <meta name="description" content="See inside the Lachmi Narain Electricals warehouse on Sungam Bypass Road, Coimbatore. Extensive Polycab cable stock - underground cables, building wires, power cables - ready for fast dispatch to contractors, builders and industries." />
-  <meta name="keywords" content="lachmi narain electricals warehouse, polycab cable stock coimbatore, cable distributor facility coimbatore, underground cables coimbatore, polycab distributor coimbatore, ready stock cables coimbatore" />
+  <title>UG Cable Warehouse Coimbatore | Polycab Distributor | Lachmi Narain Electricals</title>
+  <meta name="description" content="See inside the Lachmi Narain Electricals warehouse on Sungam Bypass Road, Coimbatore — authorised Polycab UG cable distributor. Extensive stock of UG cables (LT & HT armoured underground cables), building wires, and power cables ready for fast dispatch." />
+  <meta name="keywords" content="ug cable warehouse coimbatore, polycab ug cables coimbatore, ug cable distributor coimbatore, polycab distributor coimbatore, underground cables coimbatore, LT HT cable stock coimbatore, cable distributor facility coimbatore, lachmi narain electricals warehouse" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Our Warehouse - Lachmi Narain Electricals | Polycab Cable Distributor Coimbatore" />
-  <meta property="og:description" content="Extensive Polycab cable stock on Sungam Bypass Road, Coimbatore. Underground cables, building wires, power cables - ready for fast dispatch." />
+  <meta property="og:title" content="UG Cable Warehouse Coimbatore | Polycab Distributor | Lachmi Narain Electricals" />
+  <meta property="og:description" content="Authorised Polycab UG cable distributor in Coimbatore. Extensive UG cable stock (LT & HT armoured), building wires, power cables — ready for fast dispatch from Sungam Bypass Road." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.lnelectricals.in/warehouse.html" />
   <meta property="og:image" content="https://www.lnelectricals.in/Warehouse%20photos/WhatsApp%20Image%202026-05-28%20at%2012.51.09%20PM.jpeg" />
@@ -19,8 +19,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Our Warehouse - Lachmi Narain Electricals | Polycab Cable Distributor Coimbatore" />
-  <meta name="twitter:description" content="Extensive Polycab cable stock on Sungam Bypass Road, Coimbatore. Ready for fast dispatch." />
+  <meta name="twitter:title" content="UG Cable Warehouse Coimbatore | Polycab Distributor | Lachmi Narain Electricals" />
+  <meta name="twitter:description" content="Authorised Polycab UG cable distributor in Coimbatore. UG cables, building wires, power cables in stock and ready for fast dispatch." />
   <meta name="twitter:image" content="https://www.lnelectricals.in/Warehouse%20photos/WhatsApp%20Image%202026-05-28%20at%2012.51.09%20PM.jpeg" />
 
   <!-- Canonical -->
@@ -399,6 +399,22 @@
 
 
 
+    /* -- LANG TOGGLE -- */
+    .lang-toggle {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      padding: 7px 16px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      cursor: pointer;
+      letter-spacing: 0.3px;
+      transition: opacity 0.2s;
+      white-space: nowrap;
+    }
+    .lang-toggle:hover { opacity: 0.82; }
+
     /* -- NAV NAME (beside logo) -- */
     .nav-name {
       display: flex;
@@ -480,30 +496,33 @@
       </div>
     </div>
     <ul>
-      <li><a href="index.html#about">About</a></li>
-      <li><a href="index.html#products">Products</a></li>
-      <li><a href="index.html#why" class="active">Why Us</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="index.html#about" data-i18n="nav-about">About</a></li>
+      <li><a href="index.html#products" data-i18n="nav-products">Products</a></li>
+      <li><a href="index.html#why" class="active" data-i18n="nav-why">Why Us</a></li>
+      <li><a href="gallery.html" data-i18n="nav-gallery">Gallery</a></li>
+      <li><a href="index.html#contact" data-i18n="nav-contact">Contact</a></li>
     </ul>
-    <button class="hamburger" id="navToggle" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <button class="lang-toggle" id="langToggle">தமிழ்</button>
+      <button class="hamburger" id="navToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </nav>
 
   <!-- PAGE HEADER -->
   <div class="page-header">
     <div class="page-header-inner">
-      <div class="badge">What Sets Us Apart</div>
-      <h1>Inside Our <span>Warehouse</span></h1>
-      <p>A closer look at our facility, cable stock, and the operations behind 25+ years of trusted service in Coimbatore.</p>
+      <div class="badge" data-i18n="wh-badge">What Sets Us Apart</div>
+      <h1 data-i18n="wh-h1">Inside Our <span>Warehouse</span></h1>
+      <p data-i18n="wh-p">A closer look at our facility, cable stock, and the operations behind 25+ years of trusted service in Coimbatore.</p>
     </div>
   </div>
 
   <!-- WAREHOUSE FEATURE ROWS -->
   <section class="warehouse-section">
-    <div class="section-label">Our Facility</div>
-    <h2>Stocked, Organised &amp; Ready</h2>
+    <div class="section-label" data-i18n="wh-label">Our Facility</div>
+    <h2 data-i18n="wh-h2">Stocked, Organised &amp; Ready</h2>
 
     <!-- Row 1: Photo left, text right -->
     <div class="warehouse-row">
@@ -513,11 +532,11 @@
              alt="Lachmi Narain Electricals - Warehouse overview with Polycab cable drums Coimbatore" />
       </div>
       <div class="warehouse-info">
-        <div class="label">Our Warehouse</div>
-        <h3>Extensive Cable Stock, Ready for Delivery</h3>
-        <p>Our warehouse on Sungam Bypass Road holds a comprehensive range of Polycab cables and wires - organised for quick identification and fast dispatch. No waiting, no delays.</p>
+        <div class="label" data-i18n="wh-r1-label">Our Warehouse</div>
+        <h3 data-i18n="wh-r1-h3">Extensive UG Cable Stock, Ready for Delivery</h3>
+        <p data-i18n="wh-r1-p">Our warehouse on Sungam Bypass Road stocks a comprehensive range of Polycab UG cables (LT &amp; HT armoured underground cables), building wires, and power cables — organised for quick identification and fast dispatch to contractors and builders across Coimbatore.</p>
         <button class="view-btn" onclick="openLightboxById('img1')">
-          View Full Photo
+          <span data-i18n="wh-view-btn">View Full Photo</span>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
         </button>
       </div>
@@ -531,11 +550,11 @@
              alt="Lachmi Narain Electricals warehouse facility - Sungam Bypass Road Coimbatore" />
       </div>
       <div class="warehouse-info">
-        <div class="label">Our Location</div>
-        <h3>Warehouse on Sungam Bypass Road</h3>
-        <p>Strategically located on Sungam Bypass Road - a key industrial and logistics corridor in Coimbatore. This ensures fast and efficient delivery to contractors, builders, and industrial clients across the city and region.</p>
+        <div class="label" data-i18n="wh-r3-label">Our Location</div>
+        <h3 data-i18n="wh-r3-h3">Warehouse on Sungam Bypass Road</h3>
+        <p data-i18n="wh-r3-p">Strategically located on Sungam Bypass Road - a key industrial and logistics corridor in Coimbatore. This ensures fast and efficient delivery to contractors, builders, and industrial clients across the city and region.</p>
         <button class="view-btn" onclick="openLightboxById('img3')">
-          View Full Photo
+          <span data-i18n="wh-view-btn">View Full Photo</span>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
         </button>
       </div>
@@ -545,15 +564,15 @@
 
   <!-- CTA STRIP -->
   <div class="cta-strip">
-    <h2>Need Cables for Your Project?</h2>
-    <p>Get in touch for bulk inquiries, product availability, and fast delivery across Coimbatore.</p>
-    <a href="index.html#contact" class="cta-btn">Contact Us Today</a>
+    <h2 data-i18n="wh-cta-h2">Need Cables for Your Project?</h2>
+    <p data-i18n="wh-cta-p">Get in touch for bulk inquiries, product availability, and fast delivery across Coimbatore.</p>
+    <a href="index.html#contact" class="cta-btn" data-i18n="wh-cta-btn">Contact Us Today</a>
   </div>
 
   <!-- FOOTER -->
   <footer>
-    <p><strong>Lachmi Narain Electricals</strong> &nbsp;-&nbsp; Sungam Bypass Road, Coimbatore &nbsp;-&nbsp; GST Registered - MSME Certified</p>
-    <p style="margin-top:8px;">© 2026 Lachmi Narain Electricals. All rights reserved.</p>
+    <p data-i18n="wh-footer-p1"><strong>Lachmi Narain Electricals</strong> &nbsp;-&nbsp; Sungam Bypass Road, Coimbatore &nbsp;-&nbsp; GST Registered - MSME Certified</p>
+    <p style="margin-top:8px;" data-i18n="wh-footer-p2">© 2026 Lachmi Narain Electricals. All rights reserved.</p>
   </footer>
 
   <!-- LIGHTBOX -->
@@ -595,6 +614,7 @@
 
 
   <script>
+    /* -- NAV HAMBURGER -- */
     var toggle = document.getElementById('navToggle');
     var navList = document.querySelector('nav ul');
     toggle.addEventListener('click', function() {
@@ -607,6 +627,71 @@
         toggle.classList.remove('open');
       });
     });
+
+    /* -- TAMIL LANGUAGE TOGGLE -- */
+    var translations = {
+      en: {
+        'nav-about': 'About', 'nav-products': 'Products', 'nav-why': 'Why Us',
+        'nav-gallery': 'Gallery', 'nav-contact': 'Contact',
+        'wh-badge': 'What Sets Us Apart',
+        'wh-h1': 'Inside Our <span>Warehouse</span>',
+        'wh-p': 'A closer look at our facility, cable stock, and the operations behind 25+ years of trusted service in Coimbatore.',
+        'wh-label': 'Our Facility', 'wh-h2': 'Stocked, Organised &amp; Ready',
+        'wh-r1-label': 'Our Warehouse',
+        'wh-r1-h3': 'Extensive UG Cable Stock, Ready for Delivery',
+        'wh-r1-p': 'Our warehouse on Sungam Bypass Road stocks a comprehensive range of Polycab UG cables (LT &amp; HT armoured underground cables), building wires, and power cables — organised for quick identification and fast dispatch to contractors and builders across Coimbatore.',
+        'wh-r3-label': 'Our Location',
+        'wh-r3-h3': 'Warehouse on Sungam Bypass Road',
+        'wh-r3-p': 'Strategically located on Sungam Bypass Road - a key industrial and logistics corridor in Coimbatore. This ensures fast and efficient delivery to contractors, builders, and industrial clients across the city and region.',
+        'wh-view-btn': 'View Full Photo',
+        'wh-cta-h2': 'Need Cables for Your Project?',
+        'wh-cta-p': 'Get in touch for bulk inquiries, product availability, and fast delivery across Coimbatore.',
+        'wh-cta-btn': 'Contact Us Today',
+        'wh-footer-p1': '<strong>Lachmi Narain Electricals</strong> &nbsp;-&nbsp; Sungam Bypass Road, Coimbatore &nbsp;-&nbsp; GST Registered - MSME Certified',
+        'wh-footer-p2': '© 2026 Lachmi Narain Electricals. All rights reserved.'
+      },
+      ta: {
+        'nav-about': 'எங்களை பற்றி', 'nav-products': 'தயாரிப்புகள்', 'nav-why': 'ஏன் நாங்கள்',
+        'nav-gallery': 'படத்தொகுப்பு', 'nav-contact': 'தொடர்பு',
+        'wh-badge': 'எங்களை தனித்துவமாக்குவது',
+        'wh-h1': 'எங்கள் <span>கிடங்கிற்கு</span> உள்ளே',
+        'wh-p': 'கோயம்புத்தூரில் 25+ ஆண்டுகள் நம்பகமான சேவையின் பின்னணியில் உள்ள எங்கள் வசதி, கேபிள் கையிருப்பு மற்றும் செயல்பாடுகளை நெருக்கமாக பாருங்கள்.',
+        'wh-label': 'எங்கள் வசதி', 'wh-h2': 'கையிருப்பு, ஒழுங்கமைக்கப்பட்ட மற்றும் தயார்',
+        'wh-r1-label': 'எங்கள் கிடங்கு',
+        'wh-r1-h3': 'விரிவான UG கேபிள் கையிருப்பு, டெலிவரிக்கு தயார்',
+        'wh-r1-p': 'சுங்கம் பைபாஸ் சாலையில் உள்ள எங்கள் கிடங்கு போலிகேப் UG கேபிள்கள் (LT மற்றும் HT ஆர்மர்டு நிலத்தடி கேபிள்கள்), கட்டிட கம்பிகள் மற்றும் மின் கேபிள்களின் விரிவான வரிசையை வைத்துள்ளது — கோயம்புத்தூர் முழுவதும் ஒப்பந்தக்காரர்கள் மற்றும் கட்டிடம் கட்டுபவர்களுக்கு விரைவான அடையாளம் மற்றும் விரைவான அனுப்புதலுக்காக ஒழுங்கமைக்கப்பட்டுள்ளது.',
+        'wh-r3-label': 'எங்கள் இடம்',
+        'wh-r3-h3': 'சுங்கம் பைபாஸ் சாலையில் கிடங்கு',
+        'wh-r3-p': 'சுங்கம் பைபாஸ் சாலையில் மூலோபாய முறையில் அமைந்துள்ளது - கோயம்புத்தூரின் முக்கிய தொழில்துறை மற்றும் தளவாட வழித்தடம். இது நகரம் மற்றும் மாவட்டம் முழுவதும் ஒப்பந்தக்காரர்கள், கட்டிடம் கட்டுபவர்கள் மற்றும் தொழில்துறை வாடிக்கையாளர்களுக்கு விரைவான மற்றும் திறமையான டெலிவரியை உறுதி செய்கிறது.',
+        'wh-view-btn': 'முழு புகைப்படம் காண்க',
+        'wh-cta-h2': 'உங்கள் திட்டத்திற்கு கேபிள்கள் தேவையா?',
+        'wh-cta-p': 'மொத்த கேள்விகள், தயாரிப்பு கிடைக்கும் தன்மை மற்றும் கோயம்புத்தூர் முழுவதும் விரைவான டெலிவரிக்கு தொடர்பு கொள்ளுங்கள்.',
+        'wh-cta-btn': 'இன்றே தொடர்பு கொள்ளுங்கள்',
+        'wh-footer-p1': '<strong>லக்ஷ்மி நாராயண் எலக்ட்ரிக்கல்ஸ்</strong> &nbsp;-&nbsp; சுங்கம் பைபாஸ் சாலை, கோயம்புத்தூர் &nbsp;-&nbsp; ஜிஎஸ்டி பதிவு பெற்றது - எம்எஸ்எம்இ சான்றிதழ் பெற்றது',
+        'wh-footer-p2': '© 2026 லக்ஷ்மி நாராயண் எலக்ட்ரிக்கல்ஸ். அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டுள்ளன.'
+      }
+    };
+
+    var currentLang = localStorage.getItem('lne-lang') || 'en';
+
+    function applyLang(lang) {
+      document.querySelectorAll('[data-i18n]').forEach(function(el) {
+        var key = el.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+          el.innerHTML = translations[lang][key];
+        }
+      });
+      document.getElementById('langToggle').textContent = lang === 'en' ? 'தமிழ்' : 'English';
+      document.documentElement.lang = lang === 'ta' ? 'ta' : 'en';
+      localStorage.setItem('lne-lang', lang);
+      currentLang = lang;
+    }
+
+    document.getElementById('langToggle').addEventListener('click', function() {
+      applyLang(currentLang === 'en' ? 'ta' : 'en');
+    });
+
+    if (currentLang === 'ta') applyLang('ta');
   </script>
 
 </body>
